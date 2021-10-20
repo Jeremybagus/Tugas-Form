@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Cari Jodoh</title>
+    <style>
+        body {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="color: pink;">Daftar Akun</h1>
+    <form method="get">
+        <p>Nama Kamu</p>
+        <br>
+        <input type="text" placeholder="Nama Depan">
+        <input type="text" placeholder="Nama Belakang">
+        <br><br>
+        <p>Email Dan Katasandi</p>
+        <input type="text" placeholder="Email" pattern="">
+        <br><br>
+        <input type="password" placeholder="Katasandi">
+        <br> <br>
+        Tanggal Lahir <br>
+        <input type="date">
+        <br>
+        Alamat <br>
+        <textarea></textarea>
+
+        <br> <br>
+        Jenis Kelamin
+        <br>
+        <input type="radio" id="pria" name="Jeniskelamin"> Laki-Laki
+        <input type="radio" id="perempuan" name="Jeniskelamin"> perempuan
+        <br><br>
+        Asal Kota
+        <br>
+        <input type="text" id="kota-list" list="kota" placeholder="Kota Kamu">
+        <datalist id="kota">
+            <option value="Jakarta"></option>
+            <option value="Surabaya"></option>
+            <option value="Jawa Tengah"></option>
+            <option value="Jawa Timur"></option>
+            <option value="Jawa Barat"></option>
+            <option value="Bali"></option>
+            <option value="Bandung"></option>
+            <option value="Lampung"></option>
+            <option value="Kalimantan"></option>
+            <option value="Kepulauan Riau"></option>
+            <option value="Sulawesi"></option>
+        </datalist>
+        <br> <br>
+
+        Hobi
+        <br>
+        <input type="checkbox" id="Hobi"> Musik
+        <input type="checkbox" id="Hobi"> Olahraga
+        <input type="checkbox" id="Hobi"> Membaca <br>
+        <input type="checkbox" id="Hobi"> Bermain Video Game
+        <input type="checkbox" id="Hobi"> Menonton Film
+        <input type="checkbox" id="Hobi"> Melukis <br>
+        <input type="checkbox" id="Yang Lain"> Yang Lain <br>
+
+        <br><br><br><br>
+        <input type="submit" value="Simpan">
+        <input type="reset" value=Reset">
+        <input type="button" value="Kembali">
+    </form>
+</body>
+
+</html>
