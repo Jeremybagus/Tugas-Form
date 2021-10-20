@@ -18,34 +18,34 @@
     <form method="get">
         Nama Kamu
         <br>
-        <input type="text" placeholder="Nama Depan">
-        <input type="text" placeholder="Nama Belakang">
+        <input type="text" placeholder="Nama Depan" required>
+        <input type="text" placeholder="Nama Belakang" required>
         <br><br>
 
         Emain Dan Katasandi
         <br>
-        <input type="text" placeholder="Email">
+        <input type="text" placeholder="Email" required>
         <br>
-        <input type="password" placeholder="Katasandi">
+        <input type="password" placeholder="Katasandi" required>
         <br> <br>
 
         Tanggal Lahir <br>
-        <input type="date">
+        <input type="date" required>
         <br> <br>
 
         Alamat <br>
-        <textarea></textarea>
+        <textarea name="Alamat" required></textarea>
         <br> <br>
 
         Jenis Kelamin
         <br>
-        <input type="radio" id="pria" name="Jeniskelamin"> Laki-Laki
-        <input type="radio" id="perempuan" name="Jeniskelamin"> perempuan
+        <input type="radio" id="pria" name="Jeniskelamin" value="1" required> Laki-Laki
+        <input type="radio" id="perempuan" name="Jeniskelamin" value="2" required> perempuan
         <br><br>
 
         Agama
         <br>
-        <input type="text" id="agama-list" list="agama" placeholder="Agama Kamu">
+        <input type="text" id="agama-list" list="agama" placeholder="Agama Kamu" required>
         <datalist id="agama">
             <option value="Musilm"></option>
             <option value="Kristen"></option>
@@ -58,7 +58,7 @@
 
         Asal Kota
         <br>
-        <input type="text" id="kota-list" list="kota" placeholder="Kota Kamu">
+        <input type="text" id="kota-list" list="kota" placeholder="Kota Kamu" required>
         <datalist id="kota">
             <option value="KAB SIDOARJO">Kab. Sidoarjo</option>
             <option value="KAB MOJOKERTO">Kab. Mojokerto</option>
@@ -203,10 +203,9 @@
         <input type="checkbox" id="Hobi"> Melukis <br>
         <input type="checkbox" id="Yang Lain"> Yang Lain <br>
 
-        <br><br><br>
+        <br><br>
         <input type="submit" value="Simpan">
-        <input type="reset" value="
-        Reset">
+        <input type="reset" value="Reset">
         <input type="button" value="Kembali">
     </form>
 </body>
