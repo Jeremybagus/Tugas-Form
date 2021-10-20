@@ -14,45 +14,182 @@
 </head>
 
 <body>
-    <h1 style="color: pink;">Daftar Akun</h1>
+    <h1 style="color: rgb(255, 162, 178);">Daftar Akun Cari Jodoh</h1>
     <form method="get">
-        <p>Nama Kamu</p>
+        Nama Kamu
         <br>
         <input type="text" placeholder="Nama Depan">
         <input type="text" placeholder="Nama Belakang">
         <br><br>
-        <p>Email Dan Katasandi</p>
-        <input type="text" placeholder="Email" pattern="">
-        <br><br>
+
+        Emain Dan Katasandi
+        <br>
+        <input type="text" placeholder="Email">
+        <br>
         <input type="password" placeholder="Katasandi">
         <br> <br>
+
         Tanggal Lahir <br>
         <input type="date">
-        <br>
+        <br> <br>
+
         Alamat <br>
         <textarea></textarea>
-
         <br> <br>
+
         Jenis Kelamin
         <br>
         <input type="radio" id="pria" name="Jeniskelamin"> Laki-Laki
         <input type="radio" id="perempuan" name="Jeniskelamin"> perempuan
         <br><br>
+
+        Agama
+        <br>
+        <input type="text" id="agama-list" list="agama" placeholder="Agama Kamu">
+        <datalist id="agama">
+            <option value="Musilm"></option>
+            <option value="Kristen"></option>
+            <option value="Katolik"></option>
+            <option value="Hindu"></option>
+            <option value="Buddha"></option>
+            <option value="Konghucu"></option>
+        </datalist>
+        <br><br>
+
         Asal Kota
         <br>
         <input type="text" id="kota-list" list="kota" placeholder="Kota Kamu">
         <datalist id="kota">
-            <option value="Jakarta"></option>
-            <option value="Surabaya"></option>
-            <option value="Jawa Tengah"></option>
-            <option value="Jawa Timur"></option>
-            <option value="Jawa Barat"></option>
-            <option value="Bali"></option>
-            <option value="Bandung"></option>
-            <option value="Lampung"></option>
-            <option value="Kalimantan"></option>
-            <option value="Kepulauan Riau"></option>
-            <option value="Sulawesi"></option>
+            <option value="KAB SIDOARJO">Kab. Sidoarjo</option>
+            <option value="KAB MOJOKERTO">Kab. Mojokerto</option>
+            <option value="KAB JEMBER">Kab. Jember</option>
+            <option value="KAB BONDOWOSO">Kab. Bondowoso</option>
+            <option value="KAB BOJONEGORO">Kab. Bojonegoro</option>
+            <option value="KAB BANGKALAN">Kab. Bangkalan</option>
+            <option value="KAB BANDUNG">Kab. Bandung</option>
+            <option value="KOT BANDUNG">Bandung</option>
+            <option value="KAB BOGOR">Kab. Bogor</option>
+            <option value="KAB CILACAP">Kab. Cilacap</option>
+            <option value="KOT BEKASI">Kota Bekasi</option>
+            <option value="LAMPUNG">Lampung</option>
+            <option value="KAB SITUBONDO">Kab. Situbondo</option>
+            <option value="PALYJA">PALYJA</option>
+            <option value="KOT PALEMBANG">Palembang</option>
+            <option value="KOT BANJARMASIN">Kota Banjarmasin</option>
+            <option value="KAB SLEMAN">Kab. Sleman</option>
+            <option value="KOT BALIKPAPAN">Kota Balikpapan</option>
+            <option value="PANGKALAN BUN">Pangkalan Bun</option>
+            <option value="KAB MALANG">Kab. Malang</option>
+            <option value="KOT MAKASSAR">Kota Makassar</option>
+            <option value="KOT PONTIANAK">Kota Pontianak</option>
+            <option value="KOT MANADO">Kota Manado</option>
+            <option value="KOT SEMARANG">Kota Semarang</option>
+            <option value="KAB KENDAL">Kab. Kendal</option>
+            <option value="KAB BANYUMAS">Kab. Banyumas</option>
+            <option value="KOT MATARAM">Kota Mataram</option>
+            <option value="KAB BOYOLALI">Kab. Boyolali</option>
+            <option value="KAB BREBES">Kab. Brebes</option>
+            <option value="KAB BULELENG">Kab. Buleleng</option>
+            <option value="KAB KEBUMEN">Kab. Kebumen</option>
+            <option value="KAB PEKALONGAN">Kab. Pekalongan</option>
+            <option value="KAB PROBOLINGGO">Kab. Probolinggo</option>
+            <option value="KAB SEMARANG">Kab. Semarang</option>
+            <option value="KAB SRAGEN">Kab. Sragen</option>
+            <option value="KAB WONOGIRI">Kab. Wonogiri</option>
+            <option value="KAB WONOSOBO">Kab. Wonosobo</option>
+            <option value="KAB LOMBOK TENGAH">Kab. Lombok Tengah</option>
+            <option value="KAB PURBALINGGA">Kab. Purbalingga</option>
+            <option value="KAB REMBANG">Kab. Rembang</option>
+            <option value="KAB KARANGANYAR">Kab. Karanganyar</option>
+            <option value="KOT MADIUN">Kota Madiun</option>
+            <option value="KOT SALATIGA">Kota Salatiga</option>
+            <option value="KOT SURAKARTA">Kota Surakarta (Solo)</option>
+            <option value="KAB PURWOREJO">Kab. Purworejo</option>
+            <option value="KOT BOGOR">Kota Bogor</option>
+            <option value="KOT DEPOK">Kota Depok</option>
+            <option value="POLEWALI MANDAR">Polewali Mandar</option>
+            <option value="KOT BATAM">Kota Batam</option>
+            <option value="KAB SAMPANG">Kab. Sampang</option>
+            <option value="KAB BANDUNG BARAT">Kab. Bandung Barat</option>
+            <option value="KOT JAYAPURA">Kota Jayapura</option>
+            <option value="KAB NGAWI">Kab. Ngawi</option>
+            <option value="KAB KLATEN">Kab. Klaten</option>
+            <option value="KAB GRESIK">Kab. Gresik</option>
+            <option value="KOT YOGYAKARTA">Kota Yogyakarta</option>
+            <option value="KOT PASURUAN">Kota Pasuruan</option>
+            <option value="KAB SUKABUMI">Kab. Sukabumi</option>
+            <option value="KOT CIREBON">Kota Cirebon</option>
+            <option value="KAB GARUT">Kab. Garut</option>
+            <option value="KAB CIAMIS">Kab. Ciamis</option>
+            <option value="KAB CIANJUR">Kab. Cianjur</option>
+            <option value="KAB CIREBON">Kab. Cirebon</option>
+            <option value="KAB INDRAMAYU">Kab. Indramayu</option>
+            <option value="KAB KARAWANG">Kab. Karawang</option>
+            <option value="KAB KUNINGAN">Kab. Kuningan</option>
+            <option value="KAB SUBANG">Kab. Subang</option>
+            <option value="KAB KLUNGKUNG">Kab. Klungkung</option>
+            <option value="KAB GUNUNG KIDUL">Kab. Gunung Kidul</option>
+            <option value="KOT PALOPO">Kota Palopo</option>
+            <option value="KOT MEDAN">Kota Medan</option>
+            <option value="KAB KUBU RAYA">Kab. Kubu Raya</option>
+            <option value="KOT BANJARBARU">Kota Banjarbaru</option>
+            <option value="KAB BERAU">Kab. Berau</option>
+            <option value="KOT TANAH GROGOT">Kota Tanah Grogot</option>
+            <option value="KOT KEDIRI">Kota Kediri</option>
+            <option value="PAMEKASAN">Kab. Pamekasan</option>
+            <option value="KAB PACITAN">Kab. Pacitan</option>
+            <option value="SUMENEP">Sumenep</option>
+            <option value="KAB TRENGGALEK">Kab. Trenggalek</option>
+            <option value="KAB BADUNG">Kab. Badung</option>
+            <option value="KAB MAGELANG">Kab. Magelang</option>
+            <option value="KAB BANTUL">Kab. Bantul</option>
+            <option value="KAB BLORA">Kab. Blora</option>
+            <option value="KAB KULON PROGO">Kab. Kulon Progo</option>
+            <option value="KAB SUKOHARJO">Kab. Sukoharjo</option>
+            <option value="KOT MAGELANG">Kota Magelang</option>
+            <option value="KAB MAGETAN">Kab. Magetan</option>
+            <option value="WISATA BATU">Kota Wisata Batu</option>
+            <option value="KAB TULUNGAGUNG">Kab. Tulungagung</option>
+            <option value="KAB KUTAI TIMUR">Kab. KUTAI TIMUR</option>
+            <option value="ATS PALEMBANG">ATS PALEMBANG</option>
+            <option value="KAB BANYUWANGI">Kab. Banyuwangi</option>
+            <option value="KAB LUMAJANG">Kab. Lumajang</option>
+            <option value="KAB MUSI BANYUASIN">Kab. Musi Banyuasin</option>
+            <option value="BARABAI">Kab. Barabai</option>
+            <option value="KAB JOMBANG">Kab. Jombang</option>
+            <option value="KAB PONOROGO">Kab. Ponorogo</option>
+            <option value="KOT PROBOLINGGO">Kota Probolinggo</option>
+            <option value="KAB BATANG">Kab. Batang</option>
+            <option value="KAB TEMANGGUNG">Kab. Temanggung</option>
+            <option value="KAB GOWA">Kab. Gowa</option>
+            <option value="KAB HULU SUNGAI TENG">Kab. Hulu Sungai Tengah</option>
+            <option value="KOT MALANG">Kota Malang</option>
+            <option value="SURABAYA">Surabaya</option>
+            <option value="JAMBI">Jambi</option>
+            <option value="KAB HULU SUNGAI UTAR">Kab. HULU SUNGAI UTARA</option>
+            <option value="KOTA BANJAR">Kota Banjar</option>
+            <option value="KAB JEPARA">Kab. Jepara</option>
+            <option value="KAB BEKASI">Kab. Bekasi</option>
+            <option value="KOT PADANG">Kota Padang</option>
+            <option value="KAB PASURUAN">Kab. Pasuruan</option>
+            <option value="KAB PATI">Kab. Pati</option>
+            <option value="SIMALUNGUN">Simalungun</option>
+            <option value="KOT SAMARINDA">Kota Samarinda</option>
+            <option value="KAB SUMEDANG">Kab. Sumedang</option>
+            <option value="KAB TAPIN">Kab. Tapin</option>
+            <option value="KAB BALANGAN">Kab. Balangan</option>
+            <option value="KAB TANGERANG">Kab. Tangerang</option>
+            <option value="KENDARI">Kendari</option>
+            <option value="TIRTA KEPRI">Tirta Kepulauan Riau</option>
+            <option value="TIRTA KHAYANGAN">Tirta Khayangan</option>
+            <option value="KOT SUKABUMI">Kota Sukabumi</option>
+            <option value="KAB KISARAN">Kab. Kisaran</option>
+            <option value="KAB NIAS">Kab. Nias</option>
+            <option value="KAB PASER">Kab. Paser</option>
+            <option value="KOT PEMATANG SIANTAR">Kota Pematang Siantar</option>
+            <option value="KAB PURWAKARTA">Kab. Purwakarta</option>
+            <option value="KAB TAKALAR">Kab. Takalar</option>
+            <option value="KAB TEBO">Kab. Tebo</option>
         </datalist>
         <br> <br>
 
@@ -66,9 +203,10 @@
         <input type="checkbox" id="Hobi"> Melukis <br>
         <input type="checkbox" id="Yang Lain"> Yang Lain <br>
 
-        <br><br><br><br>
+        <br><br><br>
         <input type="submit" value="Simpan">
-        <input type="reset" value=Reset">
+        <input type="reset" value="
+        Reset">
         <input type="button" value="Kembali">
     </form>
 </body>
